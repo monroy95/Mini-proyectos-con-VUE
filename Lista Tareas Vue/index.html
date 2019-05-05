@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista Tareas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="container">
+    <div id="app" class="jumbotron">
+        <h2>{{ titulo }}</h2>
+
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Escribe una nueva tarea" v-model="nuevaTarea"
+                v-on:keyup.enter="agregarTarea">
+            <span class="input-group-btn">
+                <button type="button" v-on:click="agregarTarea()" class="btn btn-dark">Agregar</button>
+            </span>
+        </div>
+        <br>
+        <ul class="list-group">
+            <li v-for="(tarea, indice) of tareas" class="list-group-item" v-bind:class="{terminada: tarea.terminada}">
+                {{ tarea.texto }}
+                <span class="float-right text-right">
+                    <button type="button" class="btn btn-success material-icons"
+                        v-on:click="tarea.terminada = !tarea.terminada">
+                        check
+                    </button>
+                    <button type="button" class="btn btn-danger material-icons" @click="borrar()">delete</button>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="vue.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
