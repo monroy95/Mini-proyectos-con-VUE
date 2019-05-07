@@ -1,21 +1,33 @@
 <template>
   <div class="Home">
     <h1>Inicio</h1>
-    <p
-      class="red white--text"
-    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus at esse aliquid atque assumenda nobis, magnam nesciunt eligendi ullam repudiandae, saepe quo vero tempore dolore ut aspernatur impedit quibusdam?</p>
+    <!-- Ejemplos de botones y estilos -->
+    <v-btn class="pink white--text">Click Me</v-btn>
+    <v-btn depressed color="black white--text">Click Me</v-btn>
+    <v-btn flat color="light-green">Click Me</v-btn>
 
-    <p
-      class="pink lighten-4 red--text"
-    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magni obcaecati accusantium deserunt debitis numquam eum amet similique commodi ex eius enim veritatis eos at maxime, nam ea culpa dolorem.</p>
+    <!-- Iconos como botones -->
+    <v-btn class="pink white--text">
+      <v-icon left>memory</v-icon>
+      <span>IA</span>
+    </v-btn>
 
-    <h1 class="display-4">Massive Display</h1>
-    <h4 class="display-1">Smaller Display</h4>
+    <v-btn class="pink white--text">
+      <v-icon left small>memory</v-icon>
+      <span>IA</span>
+    </v-btn>
 
-    <p class="headline">This is a headline</p>
-    <p class="subheading">This is a subheading</p>
-    <p class="caption">This is a caption</p>
+    <v-btn depressed large class="pink white--text">
+      <span>IA</span>
+      <v-icon right large>email</v-icon>
+    </v-btn>
+
+    <v-btn fab depressed small dark color="purple">
+      <v-icon>favorite</v-icon>
+    </v-btn>
   </div>
+
+  <!-- For more in documentation https://vuetifyjs.com/en/components/buttons#button -->
 </template>
 
 <script>
