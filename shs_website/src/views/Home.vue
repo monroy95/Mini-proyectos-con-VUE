@@ -1,30 +1,14 @@
 <template>
   <div class="Home">
     <h1>Inicio</h1>
-    <!-- Ejemplos de botones y estilos -->
-    <v-btn class="pink white--text">Click Me</v-btn>
-    <v-btn depressed color="black white--text">Click Me</v-btn>
-    <v-btn flat color="light-green">Click Me</v-btn>
+    <!-- se activa cuando es arriba de un dispositivo medio -->
+    <!-- <v-btn class="hidden-md-and-down">Click Me</v-btn> -->
 
-    <!-- Iconos como botones -->
-    <v-btn class="pink white--text">
-      <v-icon left>memory</v-icon>
-      <span>IA</span>
-    </v-btn>
+    <!-- Se activa cuando esta bajo un dispositivo medio -->
+    <!-- <v-btn class="hidden-md-and-up">Click Me</v-btn> -->
 
-    <v-btn class="pink white--text">
-      <v-icon left small>memory</v-icon>
-      <span>IA</span>
-    </v-btn>
-
-    <v-btn depressed large class="pink white--text">
-      <span>IA</span>
-      <v-icon right large>email</v-icon>
-    </v-btn>
-
-    <v-btn fab depressed small dark color="purple">
-      <v-icon>favorite</v-icon>
-    </v-btn>
+    <!-- Unicamente se ocultara en dispositivos pequeños -->
+    <v-btn class="hidden-sm-only">Click Me</v-btn>
   </div>
 
   <!-- For more in documentation https://vuetifyjs.com/en/components/buttons#button -->
