@@ -8,7 +8,7 @@
     <!-- <v-btn class="hidden-md-and-up">Click Me</v-btn> -->
 
     <!-- Unicamente se ocultara en dispositivos pequeños -->
-    <v-btn class="hidden-sm-only">Click Me</v-btn>
+    <!-- <v-btn class="hidden-sm-only">Click Me</v-btn> -->
   </div>
 
   <!-- For more in documentation https://vuetifyjs.com/en/components/buttons#button -->
