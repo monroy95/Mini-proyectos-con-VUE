@@ -2,9 +2,8 @@
   <nav>
     <v-toolbar flat app>
       <v-toolbar-side-icon class="grey--text" @click="drawer = !drawer"></v-toolbar-side-icon>
-
       <v-toolbar-title class="text-uppercase grey--text">
-        <span class="font-weight-light">ToDo</span>
+        <span class="font-weight-light">ToDo-</span>
         <span>Ninja</span>
       </v-toolbar-title>
 
@@ -16,7 +15,7 @@
       </v-btn>
     </v-toolbar>
 
-    <v-navigation-drawer app v-model="drawer" class="indigo">
+    <v-navigation-drawer app v-model="drawer" class="primary">
       <v-list>
         <v-list-tile v-for="link in links" :key="link.text" router :to="link.route">
           <!-- Agrega el icono -->

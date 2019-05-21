@@ -1,6 +1,6 @@
 <template>
-  <div class="Home">
-    <h1>Inicio</h1>
+  <div class="projects">
+    <h1>Projects</h1>
     <!-- se activa cuando es arriba de un dispositivo medio -->
     <!-- <v-btn class="hidden-md-and-down">Click Me</v-btn> -->
 
